@@ -1,0 +1,3 @@
+MVC Project
+Calculator
+Taking data from user through view and after calculating in controller , we are returning result to the user in the view.

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Calculator</h2>
+@using (Html.BeginForm("calculator", "Calculator1"))
+{
+<div class="row">
+    <form>
+        <div class="form-group">
+            <label>1st Value</label>
+            <input type="text" class="form-control" id="value1" value="@ViewBag.num1" name="num1" placeholder="Enter first value">
+
+        </div>
+        <div class="form-group">
+            <label>2nd value</label>
+            <input type="text" class="form-control" id="value2" value="@ViewBag.num2" name="num2" placeholder="Enter second value">
+        </div>
+
+
+        
+
+        <button type="submit" value="add" name="command" >ADD</button>
+        <button type="submit" value="sub" name="command">SUB</button>
+        <button type="submit" value="mul" name="command">MUL</button>
+        <button type="submit" value="div" name="command">DIV</button>
+        
+        <div class="form-group">
+            <label>Result </label>
+            <input type="text" class="form-control" value="@ViewBag.sum" id="result" placeholder="Your output will be here" >
+             
+            
+        </div>
+        
+    </form>
+</div>
+}
